@@ -1,0 +1,16 @@
+{
+  "name": "satml-0",
+  "version": "1.0.0",
+  "description": "SATML parser/formatter and sender",
+  "main": "src/index.js",
+  "author": "JDMR (lentiummmx)",
+  "license": "MIT",
+  "dependencies": {
+    "fast-xml-parser": "^3.12.19",
+    "x2js": "^3.3.1",
+    "xml2json": "^0.11.2"
+  },
+  "scripts": {
+    "start": "src/index.js"
+  }
+}
