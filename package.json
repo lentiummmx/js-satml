@@ -11,6 +11,20 @@
     "xml2json": "^0.11.2"
   },
   "scripts": {
-    "start": "src/index.js"
+    "start-old": "src/index.js",
+    "start": "yarn build && node dist/index.js",
+    "build-old": "babel **/*.js -d dist",
+    "build": "babel src -d dist",
+    "nodemon": "yarn build && nodemon dist/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-private-methods": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "nodemon": "^1.19.1"
   }
 }
