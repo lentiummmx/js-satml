@@ -32,7 +32,7 @@ class FXP {
         cdataPositionChar: "\\c",
         format: false,
         indentBy: "  ",
-        suppressEmptyNode: false,
+        supressEmptyNode: false,
         // tagValueProcessor: a=> he.encode(a, { useNamedReferences: true}),// default is a=>a
         // attrValueProcessor: a=> he.encode(a, {isAttributeValue: isAttribute, useNamedReferences: true})// default is a=>a
     };
