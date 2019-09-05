@@ -23,7 +23,7 @@ class FXP {
         // tagValueProcessor : a => he.decode(a) //default is a=>a
     };
 
-    #DEFAUL_TO_XML_OPTIONS = {
+    #DEFAULT_TO_XML_OPTIONS = {
         attributeNamePrefix: "@_",
         // attrNodeName: "@", //default is false
         textNodeName: "#text",
@@ -50,7 +50,7 @@ class FXP {
     }
 
     toXml() {
-        const parser = new this.XmlParser(this.#DEFAUL_TO_XML_OPTIONS);
+        const parser = new this.XmlParser(this.#DEFAULT_TO_XML_OPTIONS);
         return parser.parse(this.#json);
     }
 }
