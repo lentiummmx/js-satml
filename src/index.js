@@ -9,7 +9,14 @@ console.log('__rootname2', __rootname2);
 const __basename = process.env.PWD
 console.log('__basename', __basename);
 import FXP from './parsers/fxp';
-fs.readFile( __rootname2 + '/examples/ref_main.xml', function (err, data) {
+
+// print process.argv
+process.argv.forEach(function (val, index, array) {
+  console.log(index + ': ' + val);
+});
+
+// fs.readFile( __rootname2 + '/examples/ref_main.xml', function (err, data) {
+fs.readFile(process.argv[2], function (err, data) {
   if (err) {
     throw err; 
   }
