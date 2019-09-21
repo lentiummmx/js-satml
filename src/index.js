@@ -1,12 +1,12 @@
 const fs = require('fs');
-const path = require('path')
+const path = require('path');
 console.log('__dirname', __dirname);
 console.log('__filename', __filename);
 const __rootname = process.cwd();
 console.log('__rootname', __rootname);
 const __rootname2 = path.dirname(__dirname,'/../');
 console.log('__rootname2', __rootname2);
-const __basename = process.env.PWD
+const __basename = process.env.PWD;
 console.log('__basename', __basename);
 import FXP from './parsers/fxp';
 
@@ -27,7 +27,7 @@ fs.readFile(process.argv[2], function (err, data) {
   //--var parser = new X2JS();
 
   var xml = data.toString();
-  console.log("input -> %s", xml)
+  console.log("input -> %s", xml);
   
   // xml to json
   //-var json = parser.toJson(xml);
@@ -41,6 +41,6 @@ fs.readFile(process.argv[2], function (err, data) {
   //--var xml = parser.js2xml(json);
   fxp = new FXP({ json });
   var xml = fxp.toXml();
-  console.log("back to xml -> %s", xml)
+  console.log("back to xml -> %s", xml);
 
 });
