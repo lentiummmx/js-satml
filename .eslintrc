@@ -4,10 +4,11 @@
     "browser": true,
     "node": true
   },
-  "extends": "airbnb",
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "rules": {
     "no-unused-vars": [1, { "argsIgnorePattern": "res|next|^err" }],
-    "no-underscore-dangle": [2, { "allow": ["__rootname", "__rootname2", "__basename"] }]
+    "no-underscore-dangle": [2, { "allow": ["__rootname", "__rootname2", "__basename"] }],
+    "prettier/prettier": 2
   },
   "parser": "babel-eslint",
   "parserOptions": {
@@ -16,5 +17,6 @@
       "jsx": true
     },
     "sourceType": "module"
-  }
+  },
+  "plugins": ["react", "prettier"]
 }

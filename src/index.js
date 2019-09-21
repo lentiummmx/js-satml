@@ -28,7 +28,7 @@ fs.readFile(process.argv[2], (err, data) => {
   // --var X2JS = require('x2js');
   // --var parser = new X2JS();
 
-  var xml = data.toString();
+  let xml = data.toString();
   console.log('input -> %s', xml);
 
   // xml to json
@@ -42,6 +42,6 @@ fs.readFile(process.argv[2], (err, data) => {
   // -var xml = parser.toXml(json);
   // --var xml = parser.js2xml(json);
   fxp = new FXP({ json });
-  var xml = fxp.toXml();
+  xml = fxp.toXml();
   console.log('back to xml -> %s', xml);
 });
