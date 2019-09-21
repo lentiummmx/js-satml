@@ -6,10 +6,8 @@
   },
   "extends": "airbnb",
   "rules": {
-    "no-unused-vars": [1, {
-      "argsIgnorePattern": "res|next|^err"
-    }],
-    "no-underscore-dangle": [2, { "allow": ["__rootname", "__rootname2", "__basename"]}]
+    "no-unused-vars": [1, { "argsIgnorePattern": "res|next|^err" }],
+    "no-underscore-dangle": [2, { "allow": ["__rootname", "__rootname2", "__basename"] }]
   },
   "parser": "babel-eslint",
   "parserOptions": {
